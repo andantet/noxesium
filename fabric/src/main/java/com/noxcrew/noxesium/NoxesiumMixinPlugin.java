@@ -29,7 +29,7 @@ public class NoxesiumMixinPlugin implements IMixinConfigPlugin {
             // Disable ItemOverrides changes if Chime is being used (which changes item overrides)
             case "performance.model.ItemOverridesMixin" -> !isUsingChime;
             // Enable in-game core shader check override if Sodium is being used
-            case "sodium.SodiumInGameCoreShaderChecksMixin" -> isUsingSodium;
+            case "sodium.SodiumCoreShaderChecksMixin" -> isUsingSodium;
             // We don't disable the other beacon patches as they simply get made useless by Sodium removing
             // all default global block entities.
             default -> true;
